@@ -20,6 +20,7 @@ public class FaturaController {
 	public ResponseEntity transferencia() {
 		try {
 			_service.transferencia();
+			
 			return ResponseEntity.status(200).body("Faturas inseridas com sucesso");
 		} catch (Exception e) {
 			return ResponseEntity.status(500).body("Erro genérico");
